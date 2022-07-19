@@ -1,0 +1,1 @@
+# laptop-amd-opencore
