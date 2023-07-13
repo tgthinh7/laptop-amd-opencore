@@ -1,10 +1,10 @@
 # Opencore EFI for Laptop AMD
 
-**Opencore version:**
+**Opencore version: 0.9.3**
 
 **macOS version:**
 
-## My Laptop details: Asus M3500QC:
+## Laptop: Vivobook Asus M3500QC:
 - CPU model: AMD Ryzen 7 5800H with Radeon Graphics
 - GPUmodel:
     + [x] AMD Radeon (TM) Graphics
@@ -19,7 +19,7 @@
 
 ## What is working?
 
-## What is not working
+## What is not working?
 
 **Note:**
 - a
