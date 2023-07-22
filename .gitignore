@@ -6,4 +6,4 @@
 // ignore files by specific directory's name
 OpenCore-0.9.3-RELEASE/
 
-EFI\OC\config.plist
+EFI/OC/config.plist
