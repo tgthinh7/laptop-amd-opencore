@@ -2,6 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>#WARNING - 1</key>
+	<string>rename to config.plist</string>
+	<key>#WARNING - 2</key>
+	<string>Setting up the SMBIOS info before boot</string>
 	<key>ACPI</key>
 	<dict>
 		<key>Add</key>
@@ -1579,23 +1583,23 @@
 			<key>AdviseFeatures</key>
 			<false/>
 			<key>MLB</key>
-			<string>C02701108J9JG36AD</string>
+			<string>M0000000000000001</string>
 			<key>MaxBIOSVersion</key>
 			<false/>
 			<key>ProcessorType</key>
 			<integer>0</integer>
 			<key>ROM</key>
-			<data>NKs3wzCA</data>
+			<data>ESIzRFVm</data>
 			<key>SpoofVendor</key>
 			<true/>
 			<key>SystemMemoryStatus</key>
 			<string>Auto</string>
 			<key>SystemProductName</key>
-			<string>iMacPro1,1</string>
+			<string>iMac19,1</string>
 			<key>SystemSerialNumber</key>
-			<string>C02T2JZLHX87</string>
+			<string>W00000000001</string>
 			<key>SystemUUID</key>
-			<string>D26A681E-1810-4CCD-AC76-CEF8A1608137</string>
+			<string>00000000-0000-0000-0000-000000000000</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
