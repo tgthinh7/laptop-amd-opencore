@@ -7,14 +7,16 @@
 
 ## Important:
 ### SSDTs
-Using SSDTTime [SSDTTime](https://github.com/corpnewt/SSDTTime) \\
+Using [SSDTTime](https://github.com/corpnewt/SSDTTime) <br>
 Start with option P. It dumps the current system's DSDT, which will be utilised in order to create these SSDTs and patches.
-- FixHPET
-- USBX
-- RTCAWAC
-- PluginType
-- FakeEC (for AMD)
-Copy all the files that start with SSDT and end in .aml inside of Drive/EFI/OC/ACPI
+[x] FixHPET
+[x] USBX
+[x] RTCAWAC
+[x] PluginType
+[x] FakeEC (for AMD)
+
+Copy all the files that start with SSDT and end in .aml inside of Drive/EFI/OC/ACPI  
+Finally, merge patches_OC.plist by using the PatchMerge script included with SSDTTime. Run it the same way as SSDTTime
 ### Modify config.plist
 - 
 - boot-args: -v keepsyms=1 alcid=11 debug=0x100 npci=0x2000
