@@ -36,7 +36,7 @@ Included [itlwm.kext](https://github.com/OpenIntelWireless/itlwm/releases) and [
 **PlatformInfo**  
 &ensp; Use [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS) to generate your own SMBIOS
 
-**Misc > Debug**  
+**Misc > Debug**
 - If you want enable all logging
   - AppleDebug = YES
   - ApplePanic = YES
@@ -75,7 +75,7 @@ Included [itlwm.kext](https://github.com/OpenIntelWireless/itlwm/releases) and [
 - Trackpad (not patched/fixed)
 - Microphone build-in
 - Bluetooth
--
+- Sleep
 
 ## Structure folder:
 
