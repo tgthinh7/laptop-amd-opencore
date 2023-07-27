@@ -2,7 +2,11 @@
 
 **Opencore version: 0.9.3**
 
-**macOS version:**
+**macOS version: Ventura 13.5**
+
+**Note:**
+- Modified config.plist before boot
+- boot-args: -v keepsyms=1 alcid=11 debug=0x100 
 
 ## Laptop: Vivobook Asus M3500QC:
 - CPU model: AMD Ryzen 7 5800H with Radeon Graphics
@@ -11,19 +15,20 @@
     + [ ] NVIDIA GeForce RTX 3050 Laptop GPU
 - Chipset Model: x
 - Keyboard, trackpad:
-  - Keyboard
-  - Trackpad
-- Audio Codec:
-- Network Controller models:
-- Drive Model:
+  - Keyboard: PS2
+  - Trackpad: x
+- Audio Codec: 11
+- Network Controller models: Intel(R) Wi-Fi 6 AX200 160 MHz
+- Drive Model: x
 
 ## What is working?
+- Speaker
+- 
+- 
 
 ## What is not working?
+- Trackpad
 
-**Note:**
-- a
-- b
 
 ## Structure folder:
 
@@ -33,7 +38,12 @@
 │   │   └── BOOTx64.efi
 │   └── OC
 │       ├── ACPI
-│       │   └── 
+│       │   ├── SSDT-EC.aml
+│       │   ├── SSDT-HPET.aml
+│       │   ├── SSDT-PLUG-ALT.aml
+│       │   ├── SSDT-PNLF.aml
+│       │   ├── SSDT-USBX.aml
+│       │   └── SSDT-XOSI.aml
 │       ├── Bootstrap
 │       │   └── 
 │       ├── config.plist
@@ -42,17 +52,20 @@
 │       │   ├── OpenCanopy.efi
 │       │   └── OpenRuntime.efi
 │       ├── Kexts
-│       │   ├── 
-│       │   ├── 
-│       │   ├── 
-│       │   ├── 
-│       │   ├── 
-│       │   ├── 
-│       │   ├── 
-│       │   ├── 
-│       │   ├── 
-│       │   ├── 
-│       │   └── 
+│       │   ├── AirportItlwm_Ventura.kext
+│       │   ├── AMDRyzenCPUPowerManagement.kext
+│       │   ├── AmdTscSync.kext
+│       │   ├── AppleALC.kext
+│       │   ├── AppleMCEReporterDisabler.kext
+│       │   ├── ECEnabler.kext
+│       │   ├── Lilu.kext
+│       │   ├── NootedRed.kext
+│       │   ├── NVMeFix.kext
+│       │   ├── RadeonSensor.kext
+│       │   ├── SMCAMDProcessor.kext
+│       │   ├── SMCBatteryManager.kext
+│       │   ├── SMCRadeonGPU.kext
+│       │   └── VirtualSMC.kext
 │       ├── OpenCore.efi
 │       └── Resources
 │           ├── Font
