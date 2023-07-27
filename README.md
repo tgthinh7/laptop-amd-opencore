@@ -7,9 +7,14 @@
 
 ## Important:
 ### SSDTs
-Using SSDTTime <br>
+Using SSDTTime [SSDTTime](https://github.com/corpnewt/SSDTTime) \\
 Start with option P. It dumps the current system's DSDT, which will be utilised in order to create these SSDTs and patches.
-
+- FixHPET
+- USBX
+- RTCAWAC
+- PluginType
+- FakeEC (for AMD)
+Copy all the files that start with SSDT and end in .aml inside of Drive/EFI/OC/ACPI
 ### Modify config.plist
 - 
 - boot-args: -v keepsyms=1 alcid=11 debug=0x100 npci=0x2000
