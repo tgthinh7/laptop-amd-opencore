@@ -1,7 +1,5 @@
-
-
 # Opencore EFI for Laptop AMD
-# Disclaimer
+## Disclaimer
 
 **Opencore version: 0.9.3**
 
@@ -9,7 +7,7 @@
 
 ## Important:
 ### SSDTs
-**Dump DSDT**
+Using SSDTTime <br>
 Start with option P. It dumps the current system's DSDT, which will be utilised in order to create these SSDTs and patches.
 
 ### Modify config.plist
