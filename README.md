@@ -6,23 +6,31 @@
 **macOS version: Ventura 13.5**
 
 ## Important:
-### SSDTs
-Using [SSDTTime](https://github.com/corpnewt/SSDTTime) <br>
-Start with option P. It dumps the current system's DSDT, which will be utilised in order to create these SSDTs and patches.
-[x] FixHPET
-[x] USBX
-[x] RTCAWAC
-[x] PluginType
-[x] FakeEC (for AMD)
+Important
 
-Copy all the files that start with SSDT and end in .aml inside of Drive/EFI/OC/ACPI  
-Finally, merge patches_OC.plist by using the PatchMerge script included with SSDTTime. Run it the same way as SSDTTime
+### SSDTs
+Using [SSDTTime](https://github.com/corpnewt/SSDTTime)  
+1. Start with option P. It dumps the current system's DSDT, which will be utilised in order to create these SSDTs and patches.
+    - [x] FixHPET  
+    - [x] USBX  
+    - [x] RTCAWAC  
+    - [x] PluginType  
+    - [x] FakeEC (for AMD)
+2. Copy all the files that start with SSDT and end in .aml inside of Drive/EFI/OC/ACPI  
+3. Finally, merge patches_OC.plist by using the PatchMerge script included with SSDTTime. Run it the same way as SSDTTime
+
+
 ### Modify config.plist
-- 
-- boot-args: -v keepsyms=1 alcid=11 debug=0x100 npci=0x2000
+**NVRAM**  
+&ensp;boot-args: -v keepsyms=1 alcid=11 debug=0x100 npci=0x2000
+
+
+**PlatformInfo**  
+&ensp; Use [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS) to generate your own SMBIOS  
+
 
 ### Kext
-
+Kext
 ## Laptop: Vivobook Asus M3500QC:
 - CPU model: AMD Ryzen 7 5800H with Radeon Graphics
 - GPUmodel:
