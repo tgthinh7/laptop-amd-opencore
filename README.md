@@ -1,12 +1,22 @@
+
+
 # Opencore EFI for Laptop AMD
+# Disclaimer
 
 **Opencore version: 0.9.3**
 
 **macOS version: Ventura 13.5**
 
-**Note:**
-- Modified config.plist before boot
-- boot-args: -v keepsyms=1 alcid=11 debug=0x100 
+## Important:
+### SSDTs
+**Dump DSDT**
+Start with option P. It dumps the current system's DSDT, which will be utilised in order to create these SSDTs and patches.
+
+### Modify config.plist
+- 
+- boot-args: -v keepsyms=1 alcid=11 debug=0x100 npci=0x2000
+
+### Kext
 
 ## Laptop: Vivobook Asus M3500QC:
 - CPU model: AMD Ryzen 7 5800H with Radeon Graphics
