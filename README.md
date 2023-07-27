@@ -1,14 +1,11 @@
 # Opencore EFI for Laptop AMD
-
 **Opencore version: [0.9.3](https://github.com/acidanthera/OpenCorePkg/releases/)**  
-
 **macOS version: Ventura 13.5**  
 
 ## Disclaimer:
 
+
 ## Important: Follow the below before boot with this EFI
-
-
 ### SSDTs
 **Using [SSDTTime](https://github.com/corpnewt/SSDTTime)**  
 1. Start with option ```P```. It dumps the current system's DSDT, which will be utilised in order to create these SSDTs and patches.
@@ -21,7 +18,9 @@
     + ```PLNF```
     + ```XOSI``` (Choose default ```A``` key)
 2. Copy all the files that start with SSDT and end in ```*.aml``` inside of Drive ```/EFI/OC/ACPI```
-3. Finally, merge ```patches_OC.plist``` by using the PatchMerge script included with SSDTTime. Run it the same way as SSDTTime  
+3. Finally, merge ```patches_OC.plist``` by using the PatchMerge script included with SSDTTime. Run it the same way as SSDTTime
+
+
 Or you can start the guide [here](https://nootinc.github.io/guide/gathering-files/acpi)
 
 
@@ -41,6 +40,7 @@ Included [itlwm.kext](https://github.com/OpenIntelWireless/itlwm/releases) and [
 **PlatformInfo**  
 &ensp; Use [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS) to generate your own SMBIOS  
 
+
 ## Laptop Asus Vivobook Pro 15 OLED M3500QC:
 - CPU model: AMD Ryzen 7 5800H with Radeon Graphics
 - GPU model:
@@ -56,22 +56,24 @@ Included [itlwm.kext](https://github.com/OpenIntelWireless/itlwm/releases) and [
 - Network Controller models: Intel(R) Wi-Fi 6 AX200 160 MHz
 - Drive Model: 
 
+
 ## Post-install
 ### What is working?
 - Camera
 - Speaker build-in
 - Wifi 
-- Radeon Graphics (with 512MB memory graphics)
+- Radeon Graphics (with 512MB memory)
 - Battery percentage
 -
 ### What is not working?
 - NVIDIA GPU
-- Trackpad (not fix)
+- Trackpad (not patched/fixed)
 - Microphone build-in
 - Bluetooth (not load kext yet)
 -
-## Structure folder:
 
+
+## Structure folder:
 ```
 ├── EFI
 │   ├── BOOT
@@ -114,6 +116,11 @@ Included [itlwm.kext](https://github.com/OpenIntelWireless/itlwm/releases) and [
 │       ├── .modify_this_config.plist
 │       └── OpenCore.efi
 ```
+
+
+## Images:
+![](Images/pic1.png)
+
 
 ## Preferences:
 **[Dortania](https://dortania.github.io/)**  
