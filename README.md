@@ -1,6 +1,6 @@
 # Opencore EFI for Laptop AMD
 
-**[Opencore version: 0.9.3](https://github.com/acidanthera/OpenCorePkg/releases/)**  
+**Opencore version: [0.9.3](https://github.com/acidanthera/OpenCorePkg/releases/)**  
 
 **macOS version: Ventura 13.5**  
 
@@ -12,26 +12,27 @@
 ### SSDTs
 **Using [SSDTTime](https://github.com/corpnewt/SSDTTime)**  
 1. Start with option ```P```. It dumps the current system's DSDT, which will be utilised in order to create these SSDTs and patches.
-    - [x] ```FixHPET``` (Choose option ```C``` which only patches conflicting IRQs from legacy devices)
-    - [x] ```USBX``` (choose the default option ```B``` key)
-    - [x] ```RTCAWAC```
-    - [x] ```PluginType```  
-    **For AMD Laptop**
-    - [x] ```FakeEC Laptop```
-    - [x] ```PLNF```
-    - [x] ```XOSI``` (Choose default ```A``` key)
+    + ```FixHPET``` (Choose option ```C``` which only patches conflicting IRQs from legacy devices)
+    + ```USBX``` (choose the default option ```B``` key)
+    + ```RTCAWAC```
+    + ```PluginType```  
+**For AMD Laptop**
+    + ```FakeEC Laptop```
+    + ```PLNF```
+    + ```XOSI``` (Choose default ```A``` key)
 2. Copy all the files that start with SSDT and end in ```*.aml``` inside of Drive ```/EFI/OC/ACPI```
 3. Finally, merge ```patches_OC.plist``` by using the PatchMerge script included with SSDTTime. Run it the same way as SSDTTime  
 Or you can start the guide [here](https://nootinc.github.io/guide/gathering-files/acpi)
 
 
 ### Kext
-In this case I used [Nootedred.kext](https://github.com/NootInc/NootedRed) instead of [WhateverGreen.kext](https://github.com/acidanthera/WhateverGreen/releases) but I still include [WhateverGreen.kext](https://github.com/acidanthera/WhateverGreen/releases) in [zip file](EFI\OC\Kexts\WhateverGreen.kext.zip)
+In this case I used [Nootedred.kext](https://github.com/NootInc/NootedRed) instead of [WhateverGreen.kext](https://github.com/acidanthera/WhateverGreen/releases) but I still include [WhateverGreen.kext](https://github.com/acidanthera/WhateverGreen/releases) in [zip file](EFI/OC/Kexts/WhateverGreen.kext.zip)
 
 Included [itlwm.kext](https://github.com/OpenIntelWireless/itlwm/releases) and [Heliport.dmg](https://github.com/OpenIntelWireless/HeliPort/releases) in case you don't want use [AirportItlwm.kext](https://github.com/OpenIntelWireless/itlwm/releases) (this case I use AirportItlwm.kext for Ventura)
 
 
 ### config.plist [Setup](https://dortania.github.io/OpenCore-Install-Guide/AMD/zen.html#starting-point)
+**Rename ```.modify_this_config.plist``` to ```config.plist```**  
 **Any changes in EFI folder you must be take OC clean snapshot config.plist with [ProperTree](https://github.com/corpnewt/ProperTree)** 
 
 **NVRAM**  
