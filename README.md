@@ -11,8 +11,15 @@
 
 **Using [SSDTTime](https://github.com/corpnewt/SSDTTime)**
 
-1. Start with option `P`. It dumps the current system's DSDT, which will be utilised in order to create these SSDTs and patches. + `FixHPET` (Choose option `C` which only patches conflicting IRQs from legacy devices) + `USBX` (choose the default option `B` key) + `RTCAWAC` + `PluginType`  
-   **For AMD Laptop** + `FakeEC Laptop` + `PLNF` + `XOSI` (Choose default `A` key)
+1. Start with option `P`. It dumps the current system's DSDT, which will be utilised in order to create these SSDTs and patches.
+   - `FixHPET` (Choose option `C` which only patches conflicting IRQs from legacy devices)
+   - `USBX` (choose the default option `B` key)
+   - `RTCAWAC`
+   - `PluginType`  
+     **For AMD Laptop**
+   - `FakeEC Laptop`
+   - `PLNF`
+   - `XOSI` (Choose default `A` key)
 2. Copy all the files that start with SSDT and end in `*.aml` inside of Drive `/EFI/OC/ACPI`
 3. Finally, merge `patches_OC.plist` by using the PatchMerge script included with SSDTTime. Run it the same way as SSDTTime
 
@@ -20,23 +27,23 @@ Or you can start the guide [here](https://nootinc.github.io/guide/gathering-file
 
 ### Kext
 
-In this case I used [Nootedred.kext](https://github.com/NootInc/NootedRed) instead of [WhateverGreen.kext](https://github.com/acidanthera/WhateverGreen/releases) but I still include [WhateverGreen.kext](https://github.com/acidanthera/WhateverGreen/releases) in [zip file](EFI/OC/Kexts/WhateverGreen.kext.zip)
+&ensp;In this case I used [Nootedred.kext](https://github.com/NootInc/NootedRed) instead of [WhateverGreen.kext](https://github.com/acidanthera/WhateverGreen/releases) but I still include [WhateverGreen.kext](https://github.com/acidanthera/WhateverGreen/releases) in [zip file](EFI/OC/Kexts/WhateverGreen.kext.zip)
 
-Included [itlwm.kext](https://github.com/OpenIntelWireless/itlwm/releases) and [Heliport.dmg](https://github.com/OpenIntelWireless/HeliPort/releases) in case you don't want use [AirportItlwm.kext](https://github.com/OpenIntelWireless/itlwm/releases) (this case I use AirportItlwm.kext for Ventura)
+&ensp;Included [itlwm.kext](https://github.com/OpenIntelWireless/itlwm/releases) and [Heliport.dmg](https://github.com/OpenIntelWireless/HeliPort/releases) in case you don't want use [AirportItlwm.kext](https://github.com/OpenIntelWireless/itlwm/releases) (this case I use AirportItlwm.kext for Ventura)
 
 ### config.plist [Setup](https://dortania.github.io/OpenCore-Install-Guide/AMD/zen.html#starting-point)
 
-**Rename `.modify_this_config.plist` to `config.plist`**  
-**Any changes in EFI folder you must be take OC clean snapshot config.plist with [ProperTree](https://github.com/corpnewt/ProperTree)**
+&ensp;**Rename `.modify_this_config.plist` to `config.plist`**  
+&ensp;**Any changes in EFI folder you must be take OC clean snapshot config.plist with [ProperTree](https://github.com/corpnewt/ProperTree)**
 
 **NVRAM**  
 &ensp;boot-args: `-v keepsyms=1 alcid=11 debug=0x100 agdpmod=pikera npci=0x2000`
-
 
 **PlatformInfo**  
 &ensp; Use [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS) to generate your own SMBIOS
 
 **Misc > Debug**
+
 - If you want enable all logging
   - AppleDebug = YES
   - ApplePanic = YES
@@ -67,14 +74,14 @@ Included [itlwm.kext](https://github.com/OpenIntelWireless/itlwm/releases) and [
 - Wifi
 - Radeon Graphics (with 512MB memory)
 - Battery percentage
--
+- iMessage
 
 ### What is not working?
 
 - NVIDIA GPU
-- Trackpad (not patched/fixed)
+- Trackpad (not patched/fixed yet)
 - Microphone build-in
-- Bluetooth
+- Bluetooth (not patched/fixed yet)
 - Sleep
 
 ## Structure folder:
@@ -91,8 +98,6 @@ Included [itlwm.kext](https://github.com/OpenIntelWireless/itlwm/releases) and [
 │       │   ├── SSDT-PNLF.aml
 │       │   ├── SSDT-USBX.aml
 │       │   └── SSDT-XOSI.aml
-│       ├── Bootstrap
-│       │   └──
 │       ├── Drivers
 │       │   ├── HfsPlus.efi
 │       │   ├── OpenCanopy.efi
@@ -111,8 +116,12 @@ Included [itlwm.kext](https://github.com/OpenIntelWireless/itlwm/releases) and [
 │       │   ├── SMCAMDProcessor.kext
 │       │   ├── SMCBatteryManager.kext
 │       │   ├── SMCRadeonGPU.kext
-│       │   └── VirtualSMC.kext
+│       │   ├── USBToolBox.kext
+│       │   ├── UTBMap.kext
+│       │   ├── VirtualSMC.kext
+│       │   └── VoodooPS2Controller.kext
 │       ├── Resources
+│       │   ├── Audio
 │       │   ├── Font
 │       │   ├── Image
 │       │   └── Label
