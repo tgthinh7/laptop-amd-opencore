@@ -65,6 +65,7 @@ Or you can start the guide [here](https://nootinc.github.io/guide/gathering-file
 - Network Controller models: Intel(R) Wi-Fi 6 AX200 160 MHz
 - Drive Model:
 
+
 ## Post-install
 
 ### What is working?
