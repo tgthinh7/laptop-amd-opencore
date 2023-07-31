@@ -3,7 +3,7 @@
 // ignore files by specific directory's name
 OpenCore-0.9.3-RELEASE/
 
-EFI/post-install.md
 EFI/OC/config.plist
 ignore*
+old*
 .DS*

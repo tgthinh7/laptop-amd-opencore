@@ -27,17 +27,21 @@ Or you can start the guide [here](https://nootinc.github.io/guide/gathering-file
 
 ### Kext
 
-&ensp;In this case I used [Nootedred.kext](https://github.com/NootInc/NootedRed) instead of [WhateverGreen.kext](https://github.com/acidanthera/WhateverGreen/releases) but I still include [WhateverGreen.kext](https://github.com/acidanthera/WhateverGreen/releases) in [zip file](EFI/OC/Kexts/WhateverGreen.kext.zip)
+&ensp;Used [Nootedred.kext](https://github.com/NootInc/NootedRed) instead of [WhateverGreen.kext](https://github.com/acidanthera/WhateverGreen/releases) but still include [WhateverGreen.kext](https://github.com/acidanthera/WhateverGreen/releases) in [zip file](EFI/OC/Kexts/WhateverGreen.kext.zip)
 
-&ensp;Included [itlwm.kext](https://github.com/OpenIntelWireless/itlwm/releases) and [Heliport.dmg](https://github.com/OpenIntelWireless/HeliPort/releases) in case you don't want use [AirportItlwm.kext](https://github.com/OpenIntelWireless/itlwm/releases) (this case I use AirportItlwm.kext for Ventura)
+&ensp;Recommend use [itlwm.kext](https://github.com/OpenIntelWireless/itlwm/releases) and [Heliport.dmg](https://github.com/OpenIntelWireless/HeliPort/releases) instead [AirportItlwm.kext](https://github.com/OpenIntelWireless/itlwm/releases)
 
 ### config.plist [Setup](https://dortania.github.io/OpenCore-Install-Guide/AMD/zen.html#starting-point)
 
 &ensp;**Rename `.modify_this_config.plist` to `config.plist`**  
 &ensp;**Any changes in EFI folder you must be take OC clean snapshot config.plist with [ProperTree](https://github.com/corpnewt/ProperTree)**
 
+**DeviceProperties**  
+
 **NVRAM**  
-&ensp;boot-args: `-v keepsyms=1 alcid=11 debug=0x100 agdpmod=pikera npci=0x2000`
+&ensp;boot-args: `keepsyms=1 alcid=11 debug=0x100 agdpmod=pikera npci=0x2000 swd_panic=1`  
+add `-v`  
+replace `xx` in `alcid=xx` with your layout-id  
 
 **PlatformInfo**  
 &ensp; Use [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS) to generate your own SMBIOS
@@ -82,9 +86,9 @@ Or you can start the guide [here](https://nootinc.github.io/guide/gathering-file
 - NVIDIA GPU
 - Trackpad (not patched/fixed yet)
 - Microphone build-in
-- Bluetooth (not patched/fixed yet)
+- Bluetooth
 - Sleep
-
+- 
 ## Structure folder:
 
 ```
@@ -104,12 +108,12 @@ Or you can start the guide [here](https://nootinc.github.io/guide/gathering-file
 │       │   ├── OpenCanopy.efi
 │       │   └── OpenRuntime.efi
 │       ├─ Kexts
-│       │   ├── AirportItlwm_Ventura.kext
 │       │   ├── AMDRyzenCPUPowerManagement.kext
 │       │   ├── AmdTscSync.kext
 │       │   ├── AppleALC.kext
 │       │   ├── AppleMCEReporterDisabler.kext
 │       │   ├── ECEnabler.kext
+│       │   ├── itlwm.kext
 │       │   ├── Lilu.kext
 │       │   ├── NootedRed.kext
 │       │   ├── NVMeFix.kext
@@ -120,7 +124,11 @@ Or you can start the guide [here](https://nootinc.github.io/guide/gathering-file
 │       │   ├── USBToolBox.kext
 │       │   ├── UTBMap.kext
 │       │   ├── VirtualSMC.kext
-│       │   └── VoodooPS2Controller.kext
+│       │   ├── VoodooPS2Controller.kext
+│       │   ├── AirportItlwm_Monterey.kext.zip
+│       │   ├── AirportItlwm_Ventura.kext.zip
+│       │   ├── HeliPort.dmg
+│       │   └── WhateverGreen.kext.zip
 │       ├── Resources
 │       │   ├── Audio
 │       │   ├── Font
