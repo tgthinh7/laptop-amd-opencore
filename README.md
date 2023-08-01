@@ -89,6 +89,7 @@ replace `xx` in `alcid=xx` with your layout-id
 - Bluetooth
 - Sleep
 - 
+### Emulated NVRAM
 ## Structure folder:
 
 ```
@@ -106,14 +107,15 @@ replace `xx` in `alcid=xx` with your layout-id
 │       ├── Drivers
 │       │   ├── HfsPlus.efi
 │       │   ├── OpenCanopy.efi
-│       │   └── OpenRuntime.efi
+│       │   ├── OpenRuntime.efi
+│       │   └── OpenVariableRuntimeDxe.efi
 │       ├─ Kexts
+│       │   ├── AirportItlwm_Ventura.kext
 │       │   ├── AMDRyzenCPUPowerManagement.kext
 │       │   ├── AmdTscSync.kext
 │       │   ├── AppleALC.kext
 │       │   ├── AppleMCEReporterDisabler.kext
 │       │   ├── ECEnabler.kext
-│       │   ├── itlwm.kext
 │       │   ├── Lilu.kext
 │       │   ├── NootedRed.kext
 │       │   ├── NVMeFix.kext
@@ -125,10 +127,8 @@ replace `xx` in `alcid=xx` with your layout-id
 │       │   ├── UTBMap.kext
 │       │   ├── VirtualSMC.kext
 │       │   ├── VoodooPS2Controller.kext
-│       │   ├── AirportItlwm_Monterey.kext.zip
-│       │   ├── AirportItlwm_Ventura.kext.zip
 │       │   ├── HeliPort.dmg
-│       │   └── WhateverGreen.kext.zip
+│       │   └── itlwm.kext.zip
 │       ├── Resources
 │       │   ├── Audio
 │       │   ├── Font
