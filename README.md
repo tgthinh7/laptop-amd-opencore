@@ -73,22 +73,21 @@ replace `xx` in `alcid=xx` with your layout-id
 ## Post-install
 
 ### What is working?
-
 - Camera
 - Speaker build-in
 - Wifi
 - Radeon Graphics (with 512MB memory)
 - Battery percentage
-- iMessage
+- iSeries
 
 ### What is not working?
-
 - NVIDIA GPU
 - Trackpad (not patched/fixed yet)
 - Microphone build-in
 - Bluetooth
 - Sleep
-- 
+- Shutdown/Restart
+
 ## Structure folder:
 
 ```
