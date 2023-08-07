@@ -85,7 +85,7 @@ replace `xx` in `alcid=xx` with your layout-id
 - Trackpad (not patched/fixed yet)
 - Microphone build-in
 - Bluetooth
-- Sleep
+- Sleep/Restart
 - 
 ## Structure folder:
 
