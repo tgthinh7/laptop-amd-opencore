@@ -104,8 +104,8 @@ replace `xx` in `alcid=xx` with your layout-id
 │       ├── Drivers
 │       │   ├── HfsPlus.efi
 │       │   ├── OpenCanopy.efi
-│       │   ├── OpenRuntime.efi
-│       │   └── OpenVariableRuntimeDxe.efi
+│       │   ├── bOpenRuntime.efi
+│       │   └── aOpenVariableRuntimeDxe.efi
 │       ├─ Kexts
 │       │   ├── AirportItlwm_Ventura.kext
 │       │   ├── AMDRyzenCPUPowerManagement.kext
