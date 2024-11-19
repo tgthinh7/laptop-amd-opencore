@@ -89,53 +89,53 @@ replace `xx` in `alcid=xx` with your layout-id
 - 
 ## Structure folder:
 
-```
-├── EFI
-│   ├── BOOT
-│   │   └── BOOTx64.efi
-│   └── OC
-│       ├── ACPI
-│       │   ├── SSDT-EC.aml
-│       │   ├── SSDT-HPET.aml
-│       │   ├── SSDT-PLUG-ALT.aml
-│       │   ├── SSDT-PNLF.aml
-│       │   ├── SSDT-USBX.aml
-│       │   └── SSDT-XOSI.aml
-│       ├── Drivers
-│       │   ├── HfsPlus.efi
-│       │   ├── OpenCanopy.efi
-│       │   ├── bOpenRuntime.efi
-│       │   └── aOpenVariableRuntimeDxe.efi
-│       ├─ Kexts
-│       │   ├── AirportItlwm_Ventura.kext
-│       │   ├── [AMDRyzenCPUPowerManagement.kext](https://github.com/trulyspinach/SMCAMDProcessor)
-│       │   ├── AmdTscSync.kext
-│       │   ├── [AppleALC.kext](https://github.com/acidanthera/AppleALC/releases)
-│       │   ├── AppleMCEReporterDisabler.kext
-│       │   ├── [ECEnabler.kext](https://github.com/1Revenger1/ECEnabler/releases)
-│       │   ├── [Lilu.kext](https://github.com/acidanthera/Lilu/releases)
-│       │   ├── NootedRed.kext
-│       │   ├── [NVMeFix.kext](https://github.com/acidanthera/NVMeFix/releases)
-│       │   ├── RadeonSensor.kext
-│       │   ├── SMCAMDProcessor.kext
-│       │   ├── SMCBatteryManager.kext
-│       │   ├── SMCRadeonGPU.kext
-│       │   ├── USBToolBox.kext
-│       │   ├── UTBMap.kext
-│       │   ├── [VirtualSMC.kext](https://github.com/acidanthera/VirtualSMC/releases)
-│       │   ├── [VoodooPS2Controller.kext](https://github.com/acidanthera/VoodooPS2/releases)
-│       │   ├── HeliPort.dmg
-│       │   └── itlwm.kext.zip
-│       ├── Resources
-│       │   ├── Audio
-│       │   ├── Font
-│       │   ├── Image
-│       │   └── Label
-│       ├── Tools
-│       │   └── OpenShell.efi
-│       ├── .modify_this_config.plist
-│       └── OpenCore.efi
-```
+
+├── EFI  
+│   ├── BOOT  
+│   │   └── BOOTx64.efi  
+│   └── OC  
+│       ├── ACPI  
+│       │   ├── SSDT-EC.aml  
+│       │   ├── SSDT-HPET.aml  
+│       │   ├── SSDT-PLUG-ALT.aml  
+│       │   ├── SSDT-PNLF.aml  
+│       │   ├── SSDT-USBX.aml  
+│       │   └── SSDT-XOSI.aml  
+│       ├── Drivers  
+│       │   ├── HfsPlus.efi  
+│       │   ├── OpenCanopy.efi  
+│       │   ├── bOpenRuntime.efi  
+│       │   └── aOpenVariableRuntimeDxe.efi  
+│       ├─ Kexts  
+│       │   ├── AirportItlwm_Ventura.kext  
+│       │   ├── [AMDRyzenCPUPowerManagement.kext](https://github.com/trulyspinach/SMCAMDProcessor)  
+│       │   ├── AmdTscSync.kext  
+│       │   ├── [AppleALC.kext](https://github.com/acidanthera/AppleALC/releases)  
+│       │   ├── AppleMCEReporterDisabler.kext  
+│       │   ├── [ECEnabler.kext](https://github.com/1Revenger1/ECEnabler/releases)  
+│       │   ├── [Lilu.kext](https://github.com/acidanthera/Lilu/releases)  
+│       │   ├── NootedRed.kext  
+│       │   ├── [NVMeFix.kext](https://github.com/acidanthera/NVMeFix/releases)  
+│       │   ├── RadeonSensor.kext  
+│       │   ├── SMCAMDProcessor.kext  
+│       │   ├── SMCBatteryManager.kext  
+│       │   ├── SMCRadeonGPU.kext  
+│       │   ├── USBToolBox.kext  
+│       │   ├── UTBMap.kext  
+│       │   ├── [VirtualSMC.kext](https://github.com/acidanthera/VirtualSMC/releases)  
+│       │   ├── [VoodooPS2Controller.kext](https://github.com/acidanthera/VoodooPS2/releases)  
+│       │   ├── HeliPort.dmg  
+│       │   └── itlwm.kext.zip  
+│       ├── Resources  
+│       │   ├── Audio  
+│       │   ├── Font  
+│       │   ├── Image  
+│       │   └── Label  
+│       ├── Tools  
+│       │   └── OpenShell.efi  
+│       ├── .modify_this_config.plist  
+│       └── OpenCore.efi  
+
 
 ## Images:
 
