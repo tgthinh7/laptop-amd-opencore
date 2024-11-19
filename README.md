@@ -108,22 +108,22 @@ replace `xx` in `alcid=xx` with your layout-id
 │       │   └── aOpenVariableRuntimeDxe.efi
 │       ├─ Kexts
 │       │   ├── AirportItlwm_Ventura.kext
-│       │   ├── AMDRyzenCPUPowerManagement.kext
+│       │   ├── [AMDRyzenCPUPowerManagement.kext](https://github.com/trulyspinach/SMCAMDProcessor)
 │       │   ├── AmdTscSync.kext
-│       │   ├── AppleALC.kext
+│       │   ├── [AppleALC.kext](https://github.com/acidanthera/AppleALC/releases)
 │       │   ├── AppleMCEReporterDisabler.kext
-│       │   ├── ECEnabler.kext
-│       │   ├── Lilu.kext
+│       │   ├── [ECEnabler.kext](https://github.com/1Revenger1/ECEnabler/releases)
+│       │   ├── [Lilu.kext](https://github.com/acidanthera/Lilu/releases)
 │       │   ├── NootedRed.kext
-│       │   ├── NVMeFix.kext
+│       │   ├── [NVMeFix.kext](https://github.com/acidanthera/NVMeFix/releases)
 │       │   ├── RadeonSensor.kext
 │       │   ├── SMCAMDProcessor.kext
 │       │   ├── SMCBatteryManager.kext
 │       │   ├── SMCRadeonGPU.kext
 │       │   ├── USBToolBox.kext
 │       │   ├── UTBMap.kext
-│       │   ├── VirtualSMC.kext
-│       │   ├── VoodooPS2Controller.kext
+│       │   ├── [VirtualSMC.kext](https://github.com/acidanthera/VirtualSMC/releases)
+│       │   ├── [VoodooPS2Controller.kext](https://github.com/acidanthera/VoodooPS2/releases)
 │       │   ├── HeliPort.dmg
 │       │   └── itlwm.kext.zip
 │       ├── Resources
