@@ -89,7 +89,7 @@ replace `xx` in `alcid=xx` with your layout-id
 - 
 ## Structure folder:
 
-
+```
 ├── EFI
 │   ├── BOOT
 │   │   └── BOOTx64.efi
@@ -135,7 +135,7 @@ replace `xx` in `alcid=xx` with your layout-id
 │       │   └── OpenShell.efi
 │       ├── .modify_this_config.plist
 │       └── OpenCore.efi
-
+```
 
 ## Images:
 
